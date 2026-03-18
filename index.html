@@ -18,6 +18,8 @@
       color: #cdd6f4;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     /* Estilos del encabezado */
@@ -39,6 +41,11 @@
     header p {
       font-size: 1.1rem;
       color: #a6adc8;
+    }
+
+    /* Contenido principal */
+    main {
+      flex: 1;
     }
 
     /* Layout de grilla */
@@ -93,6 +100,16 @@
       line-height: 1.6;
       color: #a6adc8;
     }
+
+    /* Pie de página */
+    footer {
+      background-color: #1e1e2e;
+      border-top: 2px solid #313244;
+      text-align: center;
+      padding: 1.5rem;
+      color: #6c7086;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
@@ -146,5 +163,9 @@
 
     </section>
   </main>
+
+  <footer>
+    <p>&copy; 2024 Mis Videojuegos Favoritos &mdash; Todos los derechos de las imágenes pertenecen a sus respectivos propietarios.</p>
+  </footer>
 </body>
 </html>
