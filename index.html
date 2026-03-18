@@ -65,12 +65,31 @@
       overflow: hidden;
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
     }
 
     /* Efecto hover en la tarjeta */
     .juego-card:hover {
       transform: translateY(-6px);
       box-shadow: 0 12px 32px rgba(137, 180, 250, 0.25);
+    }
+
+    /* Insignia numerada */
+    .juego-numero {
+      position: absolute;
+      top: 0.75rem;
+      left: 0.75rem;
+      background-color: #89b4fa;
+      color: #11111b;
+      font-weight: 700;
+      font-size: 0.85rem;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
     }
 
     .juego-card img {
@@ -149,6 +168,7 @@
     <section class="juegos-grid">
 
       <article class="juego-card">
+        <span class="juego-numero">1</span>
         <img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png" alt="Portada de GTA V">
         <div class="juego-info">
           <h2>GTA V</h2>
@@ -157,6 +177,7 @@
       </article>
 
       <article class="juego-card">
+        <span class="juego-numero">2</span>
         <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" alt="Portada de Minecraft">
         <div class="juego-info">
           <h2>Minecraft</h2>
@@ -165,6 +186,7 @@
       </article>
 
       <article class="juego-card">
+        <span class="juego-numero">3</span>
         <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/EA_Sports_FC_24_Cover.jpg" alt="Portada de FIFA 24 (EA Sports FC 24)">
         <div class="juego-info">
           <h2>FIFA 24 (EA Sports FC 24)</h2>
@@ -173,6 +195,7 @@
       </article>
 
       <article class="juego-card">
+        <span class="juego-numero">4</span>
         <img src="https://upload.wikimedia.org/wikipedia/en/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg" alt="Portada de The Legend of Zelda: Breath of the Wild">
         <div class="juego-info">
           <h2>The Legend of Zelda: Breath of the Wild</h2>
@@ -181,6 +204,7 @@
       </article>
 
       <article class="juego-card">
+        <span class="juego-numero">5</span>
         <img src="https://upload.wikimedia.org/wikipedia/en/a/a7/God_of_War_4_cover.jpg" alt="Portada de God of War (2018)">
         <div class="juego-info">
           <h2>God of War (2018)</h2>
